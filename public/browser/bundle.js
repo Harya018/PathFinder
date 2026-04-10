@@ -963,7 +963,7 @@ Board.prototype.changeStartNodeImages = function() {
     name = "A* Search";
   } else if (this.currentAlgorithm === "greedy") {
     name = "Greedy Best-first Search";
-
+  }
   if (unweighted.includes(this.currentAlgorithm)) {
     if (this.currentAlgorithm === "dfs") {
       document.getElementById("algorithmDescriptor").innerHTML = `${name} is <i><b>unweighted</b></i> and <i><b>does not guarantee</b></i> the shortest path!`;
@@ -1358,11 +1358,8 @@ Board.prototype.toggleButtons = function() {
     document.getElementById("startButtonDFS").className = "navbar-inverse navbar-nav disabledA";
     document.getElementById("startButtonBFS").className = "navbar-inverse navbar-nav disabledA";
     document.getElementById("startButtonDijkstra").className = "navbar-inverse navbar-nav disabledA";
-    document.getElementById("startButtonAStar").className = "navbar-inverse navbar-nav disabledA";
     document.getElementById("startButtonGreedy").className = "navbar-inverse navbar-nav disabledA";
     document.getElementById("startButtonAStar2").className = "navbar-inverse navbar-nav disabledA";
-    document.getElementById("startButtonAStar3").className = "navbar-inverse navbar-nav disabledA";
-    document.getElementById("startButtonBidirectional").className = "navbar-inverse navbar-nav disabledA";
 
     document.getElementById("actualStartButton").style.backgroundColor = "rgb(185, 15, 15)";
   }
